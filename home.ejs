@@ -1,0 +1,24 @@
+<%- include('./header.ejs') %>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>Branch</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let ob of students) { %>
+                    <tr>
+                        <td><%=ob.roll%></td>
+                        <td><%=ob.name%></td>
+                        <td><%=ob.branch%></td>
+                        <td><%=ob.marks%></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </body>
+</html>
